@@ -2,7 +2,7 @@ package Week_3_Assignment1_Solutions.Problem6;
 
 import java.util.concurrent.CountDownLatch;
 
-public class RelayRaceDemo {
+public class RelayRaceDemo_CountDownLatch{
     public static void main(String[] args) {
 
         CountDownLatch latch1 = new CountDownLatch(1);
