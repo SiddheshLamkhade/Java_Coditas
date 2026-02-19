@@ -27,10 +27,10 @@ public class TaskTrackerPro {
                 case 2 -> login();
                 case 3 -> {
                     manager.saveToFile();
-                    System.out.println("Goodbye!");
+                    System.out.println("Goodbye............!");
                     return;
                 }
-                default -> System.out.println("Invalid choice");
+                default -> System.out.println("Invalid choice............");
             }
         }
     }
@@ -53,7 +53,7 @@ public class TaskTrackerPro {
         }
 
         while (true) {
-            System.out.println("\n-------- Task Menu -----------------------");
+            System.out.println("\n--------------- Task Menu -----------------------");
             System.out.println("1. Add Task");
             System.out.println("2. View Tasks");
             System.out.println("3. View Tasks by Priority");
@@ -84,7 +84,7 @@ public class TaskTrackerPro {
     private static void addTask(User user) {
         System.out.print("Title: ");
         String title = sc.nextLine();
-        System.out.print("Priority (1-High, 5-Low): ");
+        System.out.print("Priority (  1-High, 5-Low   )  : ");
         int p = sc.nextInt();
         sc.nextLine();
         user.getTasks().add(new Task(title, p));
@@ -101,7 +101,7 @@ public class TaskTrackerPro {
     }
 
     private static void updateStatus(User user) {
-        System.out.print("Task ID: ");
+        System.out.print("Task ID : ");
         int id = sc.nextInt();
         sc.nextLine();
         for (Task t : user.getTasks()) {
@@ -121,7 +121,7 @@ public class TaskTrackerPro {
     }
 
     private static void searchTask(User user) {
-        System.out.print("Keyword: ");
+        System.out.print("Keyword : ");
         String key = sc.nextLine();
         user.getTasks().stream()
                 .filter(t -> t.getTitle().toLowerCase().contains(key.toLowerCase()))

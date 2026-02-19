@@ -1,7 +1,7 @@
 package Week_3_Assignment1_Solutions.Problem2;
 
 class Counter {
-    volatile int count = 0;   // trying with volatile and without volatile
+     int count = 0;   // trying with volatile and without volatile
 }
 
 class IncrementThread extends Thread {
@@ -36,6 +36,13 @@ class ReadThread extends Thread {
                 System.out.println("Read value: " + localValue);
             }
         }
+        // try {
+        //     Thread.sleep(1000);
+        // } catch (InterruptedException e) {
+        //     // TODO Auto-generated catch block
+        //     e.printStackTrace();
+        // }
+        // System.out.println("read value "+ counter.count);
     }
 }
 
