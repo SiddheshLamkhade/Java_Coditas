@@ -1,4 +1,4 @@
-package HMS.Model;
+package HMS;
 
 import java.util.ArrayList;
 import java.util.List;

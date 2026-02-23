@@ -4,9 +4,6 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
-import HMS.Model.Guest;
-import HMS.Model.GuestManager;
-
 public class ReservationManager {
     private List<Reservation> reservations = new ArrayList<>();
     private GuestManager guestManager;

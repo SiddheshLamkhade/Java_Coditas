@@ -1,11 +1,6 @@
 package HMS;
 
 import java.util.Scanner;
-
-import HMS.Model.Guest;
-import HMS.Model.GuestManager;
-import HMS.Model.InvalidGuestException;
-
 import java.util.Date;
 import java.text.SimpleDateFormat;
 

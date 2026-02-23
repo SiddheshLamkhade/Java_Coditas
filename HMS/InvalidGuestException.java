@@ -1,4 +1,4 @@
-package HMS.Model;
+package HMS;
 
 public class InvalidGuestException extends Exception {
     public InvalidGuestException(String message) {
