@@ -6,12 +6,12 @@ public class SwitchCase {
 
         Scanner sc= new Scanner(System.in);
 
-        // switch case old syntax
+        // switch case old syntax...
         int v=2;
         switch(v){
             case 0:
                 System.out.println("Monday");
-                break;
+                break;  
             case 1: 
                 System.out.println("Tuesday");
                 break;
@@ -19,7 +19,7 @@ public class SwitchCase {
                 System.out.println("not in the option");
         }
 
-        //switch case new syntax
+        //switch case new syntax...
         String s="Monday";
         int value=switch(s){
             case "Monday" ->1;
@@ -36,8 +36,8 @@ public class SwitchCase {
         String data="""
                 Siddhesh=99 %
                 Atharva=98%
-                       jiii
-                       Ramm 
+                       jiii               my
+                       k 
                                  ji 
                        ki    
                 """;
@@ -45,4 +45,10 @@ public class SwitchCase {
 
     }
 
+}
+record StudentDetails(int id ,String name) {
+    // this provides pojo class
+    // automatically provides constructor 
+    // automatically provides getters
+    // automatically hashcode and equals are there
 }
