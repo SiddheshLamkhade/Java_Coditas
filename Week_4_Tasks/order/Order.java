@@ -3,12 +3,7 @@ package Week_4_Tasks.order;
 import java.math.BigDecimal;
 import java.util.Objects;
 
-public record Order(
-        long id,
-        String customerName,
-        BigDecimal amount,
-        OrderType type
-) {
+public record Order(long id,String customerName,BigDecimal amount,OrderType type) {
     public Order {
         Objects.requireNonNull(customerName, "Customer name cannot be null");
         Objects.requireNonNull(amount, "Amount cannot be null");
