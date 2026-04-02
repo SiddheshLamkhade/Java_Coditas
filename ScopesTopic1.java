@@ -15,6 +15,5 @@ public class ScopesTopic1 {
         int c=23;
         //local variable Must be initialized before use
         System.out.println(b);
-
     }
 }
